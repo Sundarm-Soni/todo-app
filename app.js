@@ -50,6 +50,8 @@ const addNewNote = () => {
             handleEditCurrentNote(currentEditNote.target.previousElementSibling.innerHTML); 
             currentEditNote.target.previousElementSibling.innerHTML = extractInputText;
             addButton.innerText = 'Add Note';
+            addButton.style.backgroundColor = 'yellow';
+            currentEditNote.target.style.backgroundColor = 'yellow';
             inputBox.value = '';
         } else {
         notesListWrapper.appendChild(createNewNoteItem(extractInputText));
@@ -106,7 +108,9 @@ const handleEditDeleteNode = (event) => {
             inputBox.value = event.target.previousElementSibling.innerHTML;
             inputBox.focus();
             addButton.innerText = "Edit Note";
+            addButton.style.backgroundColor = 'salmon';
             currentEditNote = event;
+            event.target.style.backgroundColor = 'red';
         }
     }
 }

@@ -57,6 +57,41 @@ li {
     color: white;
 }
 
+ul {
+    width: 450px;
+    list-style: none;
+}
+
+ul li {
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: chocolate;
+    border-radius: 10px;
+}
+
+ul li p {
+    font-size: 20px;
+}
+
+ul li button {
+    padding: 10px 15px;
+    background-color: #fbff28;
+    color: #000;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.deleteBtn {
+    background-color: aqua;
+}
+
+
+
 
 
 
